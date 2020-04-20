@@ -19,7 +19,6 @@ class ComboModel {
         }
 
         updateGroupCounts();
-
         this._color = color;
     }
 
@@ -30,6 +29,11 @@ class ComboModel {
 
         this.tile.addEventListener("mousedown", (event) => {
             if (isPrimaryMouseDown(event)) {
+                if (window.selectedColor === this._color) {
+                    window.actualColor = colors[0];
+                } else {
+                    window.actualColor = window.selectedColor;
+                }
                 this.setColor();
             }
         });
@@ -43,6 +47,6 @@ class ComboModel {
     }
 
     setColor() {
-        this.color = window.selectedColor;
+        this.color = window.actualColor;
     }
 }
