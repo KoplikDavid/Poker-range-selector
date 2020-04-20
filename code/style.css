@@ -1,0 +1,67 @@
+.grid-color {
+    border: 2px solid black;
+    width: 600px;
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+}
+
+.color-tile {
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.color-red {
+    background-color: red;
+}
+.color-orange {
+    background-color: orange;
+}
+.color-dark-blue {
+    background-color: darkblue;
+}
+.color-light-blue {
+    background-color: lightblue;
+}
+.color-green {
+    background-color: green;
+}
+.color-yellow {
+    background-color: yellow;
+}
+.color-brown {
+    background-color: brown;
+}
+
+.selected-color {
+    width: 50px;
+    height: 50px;
+}
+
+.grid-holder {
+    border: 2px solid black;
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(13, auto);
+    grid-template-rows: repeat(13, auto);
+}
+
+
+.combo-tile {
+    border: 1px solid black;
+    margin: 2px;
+    display: flex;
+}
+
+.combo-tile.selected {
+    background: green;
+}
+
+.combo-label {
+    margin: auto;
+
+    user-select: none;
+}
